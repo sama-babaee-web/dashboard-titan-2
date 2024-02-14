@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: FontVazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../src/assets/font/Font-iranSans/Sans\ a4fran3.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  direction: rtl;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: FontVazir !important;
+  direction: rtl !important;
+  font-size: 13px !important;
+  background-color: var(--color-bg-light) !important;
+  /* transition: all .1s ease; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --color-black: #131921;
+  --color-bg-light :#e8f3fe;
+  --color-txt-gray :#899199;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  font-family: FontVazir;
+  text-decoration: none !important;
+  display: inline-block;
+  color: var(--color-txt-gray) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style-type: none;
+}
+
+
+
+body.style-floating-layouts .layout-sidebar,
+body.style-floating-layouts .layout-header 
+ {
+  padding: 1rem !important;
+}
+body.style-floating-layouts .layout-header>.card {
+  border-radius: 10px;
+  box-shadow: 0 0 25px 20px rgba(0,0,0,.03);
+  transition: all .4s ease;
+}
+.main-content{
+    width: calc(100% - 334px);
+    transition: all .4s ease;
+}
+@media (max-width: 991px){
+    .main-content {
+        width: 100% !important;
+    }
+}
+
+button, input, textarea {
+  border: none;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+.card{
+  border: none !important;
+}
+.h-36px {
+  height: 36px !important;
+}
+
+.w-36px {
+  width: 36px !important;
+}
+
+.w-60px {
+  width: 60px !important;
+}
+
+.rounded-10px {
+  border-radius: 10px !important;
+}
+
+/* # Start Custom Scroll */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(219, 213, 213);
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #009d9d;
 }
