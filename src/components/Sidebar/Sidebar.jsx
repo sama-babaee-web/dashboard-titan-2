@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./Sidebar.css"
 import logo from '../../assets/images/titan.png';
 
-function Sidebar() {
+function Sidebar({ className }) {
   return (
-    <aside className='sidebar layout-sidebar h-100 position-fixed start-0 top-0'>
+    <aside className={`${className} h-100 position-fixed start-0 top-0`}>
       <div className="card sidebar-contents">
         <div className="p-1">
 
           {/* sidebar-header */}
           <div className="card-header h-auto border-0 bg-transparent">
             <div className="d-flex align-items-center justify-content-start">
-              <span className="logo">
+              <span>
                 <img className='w-60px' src={logo} alt="" />
               </span>
               <div className="d-flex justify-content-center align-items-center">
@@ -21,10 +21,9 @@ function Sidebar() {
           </div>
           {/* sidebar-body */}
 
-          <div className="card-body card-body scrollbar overlayScrollbars p-3 accordion">
-            <div className="ss">
+          <div className="card-body  p-3 accordion">
               <ul className='p-0 mb-0'>
-                <li className='mb-3'>
+                <li className='mb-3 item'>
                   <div className="border rounded py-1 ps-3">
                     <a href="" className='d-flex align-items-center'>
                       <span> <i class="bi bi-person h5 d-flex justify-content-center pt-2"></i></span>
@@ -32,7 +31,7 @@ function Sidebar() {
                     </a>
                   </div>
                 </li>
-                <li className='mb-3'>
+                <li className='mb-3 item'>
                   <div className="border rounded py-1 ps-3">
                     <a href="" className='d-flex align-items-center'>
                       <span> <i class="bi bi-person h5 d-flex justify-content-center pt-2"></i></span>
@@ -40,32 +39,16 @@ function Sidebar() {
                     </a>
                   </div>
                 </li>
-                <li className='mb-3'>
+                <li className='mb-3 item'>
                   <div className="border rounded py-1 ps-3">
                     <a href="" className='d-flex align-items-center'>
                       <span> <i class="bi bi-person h5 d-flex justify-content-center pt-2"></i></span>
                       <span className="ms-2">بررسی</span>
                     </a>
                   </div>
-                </li>
-                <li className='mb-3'>
-                  <div className="border rounded py-1 ps-3">
-                    <a href="" className='d-flex align-items-center'>
-                      <span> <i class="bi bi-person h5 d-flex justify-content-center pt-2"></i></span>
-                      <span className="ms-2">بررسی</span>
-                    </a>
-                  </div>
-                </li>
-                <li className='mb-3'>
-                  <div className="border rounded py-1 ps-3">
-                    <a href="" className='d-flex align-items-center'>
-                      <span> <i class="bi bi-person h5 d-flex justify-content-center pt-2"></i></span>
-                      <span className="ms-2">بررسی</span>
-                    </a>
-                  </div>
-                </li>
+                </li>            
+
               </ul>
-            </div>
           </div>
 
         </div>

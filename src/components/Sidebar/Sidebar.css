@@ -1,30 +1,22 @@
-.layout-sidebar {
-    padding: 1rem !important;
-    width: 21.5rem;
-    z-index: 20;
-    position: relative;
-    padding: 0 !important;
-    transition: all .4s ease;
+.sidebar {
+  padding: 1rem !important;
+  width: 21.5rem;
+  z-index: 20;
+  position: relative;
+  padding: 0 !important;
+  transition: all .4s ease;
 }
-
-
+.sidebar-closed {
+  /* Styles for when the sidebar is closed */
+  transform: translateX(100%);
+  transition: transform  0.4s ease;
+}
 .sidebar-contents {
-    box-shadow: 0 0 25px 20px rgba(0, 0, 0, .05);
-    border-radius: 10px;
-    overflow-x: hidden !important;
-    height: 100% !important;
-
-}
-
-@media screen and (max-width: 991px) {
-    .layout-sidebar {
-        transform: translateX(100%);
-    }
+  box-shadow: 0 0 25px 20px rgba(0, 0, 0, .05);
+  border-radius: 10px;
+  overflow-x: hidden !important;
+  height: 100% !important;
 }
 
 
-.layout-sidebar>.card>.card-header .brand {
-    gap: 10px;
-    transition: all .4s ease;
-}
 
