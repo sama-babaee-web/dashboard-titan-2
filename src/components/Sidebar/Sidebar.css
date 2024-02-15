@@ -1,11 +1,11 @@
 .sidebar {
   padding: 1rem !important;
-  width: 21.5rem;
+  width: 20rem;
   z-index: 20;
   position: relative;
-  padding: 0 !important;
   transition: all .4s ease;
 }
+
 .sidebar-closed {
   /* Styles for when the sidebar is closed */
   transform: translateX(100%);
@@ -17,6 +17,31 @@
   overflow-x: hidden !important;
   height: 100% !important;
 }
+.item{
+  border: 1px solid rgba(96, 183, 212, 0.206);
+  border-radius: 10px;
+}
+.item:hover{
+  color: #727688;
+  background-color: #f7f9fa;
+  border-radius: 10px;
+}
+@media (max-width: 991px){
+  .sidebar {
+    width: 14rem;
+  }
+}
 
 
 
+.card>.card-footer {
+  padding: 1.2rem 1.5rem;
+  background-color: rgba(0,0,0,0);
+  border-color: #f2f2f2;
+  transition: all .4s ease;
+}
+
+.open-tour{
+  color: #899199 !important;
+  background-color: #f7f9fa !important;
+}

@@ -29,7 +29,7 @@ function Layout() {
   return (
     <>
 
-      <Header onToggleSidebar={toggleSidebar} className={headerClass}/>
+      <Header onToggleSidebar={toggleSidebar} className={headerClass}  isSidebarOpen={isSidebarOpen}/>
       <Sidebar className={isSidebarOpen ? 'sidebar' : 'sidebar-closed'} />
 
       <div className={mainContentClass}>

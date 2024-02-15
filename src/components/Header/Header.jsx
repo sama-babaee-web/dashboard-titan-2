@@ -1,19 +1,26 @@
 import React, { useContext } from 'react'
 import "./Header.css"
 
-function Header({ onToggleSidebar, className }) {
+function Header({ onToggleSidebar, className, isSidebarOpen }) {
     return (
-        <header className={`${className} header position-fixed top-0 end-0`}>
-            <div className="card">
+        <header className={`${className}  header position-fixed top-0 end-0`}>
+            <div className="card ">
                 <div className="carde-body px-0 py-2">
                     <nav className='navbar navbar-light p-0 bg-transparent'>
                         <div className="container-fluid">
                             <div className="d-flex align-items-center order-1 order-lg-0">
                                 <div className="sidebar-toggle cursor-pointer d-flex align-items-center justify-content-center bg-transparent border-0 p-0 opened">
-                                    <button className=' w-36px h-36px' onClick={onToggleSidebar} ><i className="bi bi-x h1 d-flex justify-content-center "></i></button>
+                                    <button className=' w-36px h-36px' onClick={onToggleSidebar} >
+                                        {isSidebarOpen ? (
+                                            <i className="bi bi-x h1 d-flex justify-content-center "></i>
+                                        ) : (
+                                        <i className="bi bi-list h1 d-flex justify-content-center "></i>
+                                        
+                                        )}
+                                    </button>
                                 </div>
                                 <div className="title-breadcrumb d-lg-flex flex-column ms-3 d-none ">
-                                    <h5 className="title text-gray-dark-important mt-1 mb-3 ">داشبورد</h5>
+                                    <h5 className="title text-gray-dark-important mt-1 mb-3 h6">داشبورد</h5>
                                     <ul className="breadcrumb mb-1">
                                         <li className="breadcrumb-item ">
                                             <a href="" className='hover-text-gray-dark-2'>خانه</a>
