@@ -21,16 +21,18 @@ function Progress({ currentStep, totalSteps }) {
             {stages.map((stage, index) => (
                 <div
                     key={index}
-                    className={`progress-step ${index < currentStep ? 'completed' : ''} mx-1 col-md-4 col-lg-2 my-2`}
+                    className={`progress-step ${index < currentStep ? 'completed' : ''} mx-1 col-md-4 col-xl-2 my-2 py-3`}
                 >
                     <span className="stage-icon">{stage.icon}</span>
-                    <span className="stage-label">{stage.label}</span>
+                    <span className="stage-label fs11">{stage.label}</span>
                 </div>
             ))}
             {/* <div
                 className="progress-bar"
                 style={{ width: `${progressPercentage}%` }}
-            /> */}
+            >
+            </div> */}
+
         </div>
 
 

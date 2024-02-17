@@ -1,0 +1,124 @@
+/* ProgressSteps.css */
+
+.main-container {
+    width:  100%;
+    max-width:  600px;
+    margin:  0 auto;
+    padding:  0  16px;
+  }
+  
+  .step-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top:  10px;
+    position: relative;
+  }
+  
+  .step-container:before {
+    content: '';
+    position: absolute;
+    background: #d6f9f3;
+    height:  4px;
+    width:  100%;
+    top:  50%;
+    transform: translateY(-50%);
+    left:  0;
+  }
+  
+  .step-container:after {
+    content: '';
+    position: absolute;
+    background: #26b29d;
+    height:  4px;
+    width:  0; /* Initial width will be set dynamically */
+    top:  50%;
+    transition: width  0.4s ease;
+    transform: translateY(-50%);
+    left:  0;
+  }
+  
+  .step-wrapper {
+    position: relative;
+    z-index:  1;
+  }
+  
+  .step-style {
+    width:  40px;
+    height:  40px;
+    border-radius:  50%;
+    background-color: #ffffff;
+    border:  3px solid #d6f9f3; /* Default color */
+    transition:  0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .step-style.completed {
+    border-color: #26b29d;
+  }
+  
+  .step-count {
+    font-size:  19px;
+    color: #d6f9f3;
+  }
+  
+  @media (max-width:  600px) {
+    .step-count {
+      font-size:  16px;
+    }
+  }
+  
+  .steps-label-container {
+    position: absolute;
+    top:  66px;
+    left:  50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .step-label {
+    color: #062b25;
+  }
+  
+  @media (max-width:  600px) {
+    .step-label {
+      font-size:  16px;
+    }
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin:  0 -15px;
+    margin-top:  100px;
+  }
+  
+  .button-style {
+    border-radius:  4px;
+    border:  0;
+    background: #26b29d;
+    color: #ffffff;
+    cursor: pointer;
+    padding:  8px;
+    width:  90px;
+    transition: transform  0.1s;
+  }
+  
+  .button-style:active {
+    transform: scale(0.98);
+  }
+  
+  .button-style:disabled {
+    background: #d6f9f3;
+    color: #000000;
+    cursor: not-allowed;
+  }
+  
+  .check-mark {
+    font-size:  26px;
+    font-weight:  600;
+    color: #26b29d;
+    transform: scaleX(-1) rotate(-46deg);
+  }
+  

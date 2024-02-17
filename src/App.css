@@ -70,13 +70,14 @@ body.style-floating-layouts .layout-header>.card {
   width: calc(100% - 334px) !important;
   transition: all 0.4s ease;
   float: inline-end;
-  padding-top: 60px;
+  padding-top: 60px;  
 }
 
 .main-content-full {
   width: 100%;
   transition: all 0.4s ease;
   padding-top: 60px !important;
+  
 }
 
 @media (min-width: 991px) {
@@ -93,6 +94,7 @@ body.style-floating-layouts .layout-header>.card {
 
   .main-content-full {
     padding-top: 0 !important;
+    
   }
 }
 
@@ -124,7 +126,9 @@ textarea {
 .fs11 {
   font-size: 11px !important;
 }
-
+.fs9 {
+  font-size: 9px !important;
+}
 .rounded-10px {
   border-radius: 10px !important;
 }
