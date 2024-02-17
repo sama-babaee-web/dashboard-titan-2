@@ -17,7 +17,6 @@ body {
   direction: rtl !important;
   font-size: 13px !important;
   background-color: var(--color-bg-light) !important;
-  /* transition: all .1s ease; */
 }
 
 :root {
@@ -39,22 +38,20 @@ li {
 
 .layout-header-full {
   width: 100%;
-  transition: all .4s ease;
   z-index: 10;
   font-weight: 500;
   background-color: #e8f3fe !important;
   padding: 20px;
 }
 
-body.style-floating-layouts .sidebar,
-body.style-floating-layouts .layout-header {
+.sidebar,
+.layout-header {
   padding: 1rem !important;
 }
 
 @media (max-width: 991px) {
-
-  body.style-floating-layouts .sidebar,
-  body.style-floating-layouts .layout-header,
+  .sidebar,
+  .layout-header,
   .layout-header-full {
     padding: 0 !important;
   }
@@ -63,21 +60,18 @@ body.style-floating-layouts .layout-header {
 body.style-floating-layouts .layout-header>.card {
   border-radius: 10px;
   box-shadow: 0 0 25px 20px rgba(0, 0, 0, .03);
-  transition: all 0.4s ease;
 }
 
 .main-content {
   width: calc(100% - 334px) !important;
-  transition: all 0.4s ease;
   float: inline-end;
-  padding-top: 60px;  
+  padding-top: 60px;
 }
 
 .main-content-full {
   width: 100%;
-  transition: all 0.4s ease;
   padding-top: 60px !important;
-  
+
 }
 
 @media (min-width: 991px) {
@@ -94,7 +88,7 @@ body.style-floating-layouts .layout-header>.card {
 
   .main-content-full {
     padding-top: 0 !important;
-    
+
   }
 }
 
@@ -126,9 +120,11 @@ textarea {
 .fs11 {
   font-size: 11px !important;
 }
+
 .fs9 {
   font-size: 9px !important;
 }
+
 .rounded-10px {
   border-radius: 10px !important;
 }
