@@ -33,10 +33,10 @@ function Header({ onToggleSidebar, className, isSidebarOpen }) {
                             </div>
                             <div className="toolbar d-flex align-items-center order-0 order-lg-1">
                                 <div className="toggleable-toolbar d-flex align-items-center">
-                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-search  h5 d-flex justify-content-center pt-2"></i></button>
-                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-chat  h5 d-flex justify-content-center pt-2"></i></button>
-                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-bell  h5 d-flex justify-content-center pt-2"></i></button>
-                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-person  h5 d-flex justify-content-center pt-2"></i></button>
+                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i className="bi bi-search  h5 d-flex justify-content-center pt-2"></i></button>
+                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i className="bi bi-chat  h5 d-flex justify-content-center pt-2"></i></button>
+                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i className="bi bi-bell  h5 d-flex justify-content-center pt-2"></i></button>
+                                    <button className='open-tour box w-36px h-36px p-2 me-2'><i className="bi bi-person  h5 d-flex justify-content-center pt-2"></i></button>
                                 </div>
                             </div>
                         </div>

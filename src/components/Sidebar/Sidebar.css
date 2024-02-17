@@ -40,8 +40,16 @@
   border-color: #f2f2f2;
   transition: all .4s ease;
 }
+.btn-light-cyan {
+  background-color: #d6f9f3;
+  color: #26b29d;
+}
+.btn-light-red {
+  background-color: #ffeaeb;
+  color: #d86062;
+}
 
-.open-tour{
-  color: #899199 !important;
-  background-color: #f7f9fa !important;
+.btn-light-orange {
+  background-color: #fff8ec !important;
+  color: #de8f52 !important;
 }

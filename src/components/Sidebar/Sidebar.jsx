@@ -26,7 +26,7 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className=" py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-house h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-house h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2"> صفحه اصلی </span>
                   </a>
                 </div>
@@ -34,7 +34,7 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className="py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-wrench-adjustable-circle-fill h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-wrench-adjustable-circle-fill h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2"> گارانتی </span>
                   </a>
                 </div>
@@ -42,7 +42,7 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className="py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-people h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-people h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2">  مشتریان </span>
                   </a>
                 </div>
@@ -50,7 +50,7 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className="py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-device-hdd-fill h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-device-hdd-fill h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2">  محصولات </span>
                   </a>
                 </div>
@@ -58,7 +58,7 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className="py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-gear-wide-connected h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-gear-wide-connected h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2">  خدمات </span>
                   </a>
                 </div>
@@ -66,7 +66,7 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className="py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-people h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-people h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2">  مشتریان </span>
                   </a>
                 </div>
@@ -74,52 +74,21 @@ function Sidebar({ className }) {
               <li className='mb-2 item'>
                 <div className="py-1 ps-3">
                   <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-device-hdd-fill h5 d-flex justify-content-center pt-2"></i></span>
+                    <span> <i className="bi bi-device-hdd-fill h5 d-flex justify-content-center pt-2"></i></span>
                     <span className="ms-2">  محصولات </span>
                   </a>
                 </div>
               </li>
-              <li className='mb-2 item'>
-                <div className="py-1 ps-3">
-                  <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-gear-wide-connected h5 d-flex justify-content-center pt-2"></i></span>
-                    <span className="ms-2">  خدمات </span>
-                  </a>
-                </div>
-              </li>
-              <li className='mb-2 item'>
-                <div className="py-1 ps-3">
-                  <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-people h5 d-flex justify-content-center pt-2"></i></span>
-                    <span className="ms-2">  مشتریان </span>
-                  </a>
-                </div>
-              </li>
-              <li className='mb-2 item'>
-                <div className="py-1 ps-3">
-                  <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-device-hdd-fill h5 d-flex justify-content-center pt-2"></i></span>
-                    <span className="ms-2">  محصولات </span>
-                  </a>
-                </div>
-              </li>
-              <li className='mb-2 item'>
-                <div className="py-1 ps-3">
-                  <a href="" className='d-flex align-items-center'>
-                    <span> <i class="bi bi-gear-wide-connected h5 d-flex justify-content-center pt-2"></i></span>
-                    <span className="ms-2">  خدمات </span>
-                  </a>
-                </div>
-              </li>
+
 
 
             </ul>
           </div>
-          <div className="card-footer bg-transparent ">
-            <div className="d-flex justify-content-center align-items-center">
-              <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-gear h5 d-flex justify-content-center pt-2"></i></button>
-              <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-box-arrow-right  h5 d-flex justify-content-center pt-2"></i></button>
-              <button className='open-tour box w-36px h-36px p-2 me-2'><i class="bi bi-moon  h5 d-flex justify-content-center pt-2"></i></button>
+          <div className="card-footer position-absolute bottom-0 col-12 py-4 bg-white">
+            <div className="d-flex justify-content-center align-items-center ">
+              <button className='box w-36px h-36px p-2 me-2 btn-light-cyan'><i className="bi bi-gear h5 d-flex justify-content-center pt-2"></i></button>
+              <button className='box w-36px h-36px p-2 me-2 btn-light-red'><i className="bi bi-box-arrow-right  h5 d-flex justify-content-center pt-2"></i></button>
+              <button className='box w-36px h-36px p-2 me-2 btn-light-orange'><i className="bi bi-moon  h5 d-flex justify-content-center pt-2"></i></button>
 
             </div>
           </div>
