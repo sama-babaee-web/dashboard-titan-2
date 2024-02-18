@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar/Sidebar'
 import Header from '../Header/Header'
+import './Layout.css'
 
 
 function Layout() {
@@ -13,7 +14,6 @@ function Layout() {
 
   useEffect(() => {
     const handleResize = () => {
-      // Set sidebar to open if window width is greater than  997
       setIsSidebarOpen(window.innerWidth >  997);
     };
     window.addEventListener('resize', handleResize);

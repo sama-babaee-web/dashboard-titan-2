@@ -36,61 +36,6 @@ li {
   list-style-type: none;
 }
 
-.layout-header-full {
-  width: 100%;
-  z-index: 10;
-  font-weight: 500;
-  background-color: #e8f3fe !important;
-  padding: 20px;
-}
-
-.sidebar,
-.layout-header {
-  padding: 1rem !important;
-}
-
-@media (max-width: 991px) {
-  .sidebar,
-  .layout-header,
-  .layout-header-full {
-    padding: 0 !important;
-  }
-}
-
-body.style-floating-layouts .layout-header>.card {
-  border-radius: 10px;
-  box-shadow: 0 0 25px 20px rgba(0, 0, 0, .03);
-}
-
-.main-content {
-  width: calc(100% - 334px) !important;
-  float: inline-end;
-  padding-top: 60px;
-}
-
-.main-content-full {
-  width: 100%;
-  padding-top: 60px !important;
-
-}
-
-@media (min-width: 991px) {
-  .header {
-    margin-bottom: 200px !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .main-content {
-    width: 100% !important;
-    padding-top: 0 !important;
-  }
-
-  .main-content-full {
-    padding-top: 0 !important;
-
-  }
-}
 
 button,
 input,

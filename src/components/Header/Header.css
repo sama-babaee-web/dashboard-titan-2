@@ -11,14 +11,7 @@
     }
 }
 
-.box {
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.open-tour{
+.btn-header{
     color: #899199 !important;
     background-color: #f7f9fa !important;
 }

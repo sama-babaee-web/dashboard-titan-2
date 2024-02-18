@@ -3,6 +3,7 @@ import './Home.css'
 import Progress from '../../components/Home/Progress/Progress'
 import CustomerRequests from '../../components/Home/CustomerRequests/CustomerRequests'
 import ProgressBar from '../../components/Home/ProgressBar/ProgressBar'
+import Chart from '../../components/Home/Chart/Chart'
 
 function Home() {
     const completed = 50;
@@ -22,6 +23,16 @@ function Home() {
                     <div className="card rounded-10 p-2 py-4  ">
                         <h2 className='h6 pb-4 ps-4'> مراحل تایید گارانتی </h2>
                         <ProgressBar completed={completed} />
+                    </div>
+                </div>
+            </div>
+            <div className="row my-3">
+                <div className="col-12">
+                    <div className="card rounded-10 p-2 py-4  ">
+                        <h2 className='h6 pb-4 ps-4'> وضعیت کالاهای در حال گارانتی  </h2>
+                        <div className="d-flex justify-content-center">
+                            <Chart />
+                        </div>
                     </div>
                 </div>
             </div>

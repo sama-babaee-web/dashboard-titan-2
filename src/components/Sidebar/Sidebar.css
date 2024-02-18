@@ -1,5 +1,4 @@
 .sidebar {
-  padding: 1rem !important;
   width: 20rem;
   z-index: 20;
   position: relative;
@@ -8,38 +7,56 @@
 .sidebar-closed {
   transform: translateX(100%);
 }
+
 .sidebar-contents {
   box-shadow: 0 0 25px 20px rgba(0, 0, 0, .05);
   border-radius: 10px;
   overflow-x: hidden !important;
   height: 100% !important;
 }
-.item{
+
+.sidebar-contents .card-body .item {
   border: 1px solid rgba(96, 183, 212, 0.206);
   border-radius: 10px;
 }
-.item:hover{
+
+.sidebar-contents .card-body .item:hover {
   color: #727688;
   background-color: #f7f9fa;
   border-radius: 10px;
 }
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
   .sidebar {
-    width: 14rem;
+    width: 15rem;
+    /* padding: 0 !important; */
+  }
+
+  .sidebar .card-header h1 {
+    font-size: 13px;
+  }
+
+  .sidebar .card-body a span {
+    font-size: 11px !important;
   }
 }
 
-
-
-.card>.card-footer {
+@media (max-width: 350px) {
+  .sidebar {
+    width: 12rem;
+  }
+}
+.sidebar-contents .card-footer {
   padding: 1.2rem 1.5rem;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border-color: #f2f2f2;
 }
+
 .btn-light-cyan {
   background-color: #d6f9f3;
   color: #26b29d;
 }
+
 .btn-light-red {
   background-color: #ffeaeb;
   color: #d86062;
